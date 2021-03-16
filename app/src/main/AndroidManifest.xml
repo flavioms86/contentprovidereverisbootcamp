@@ -11,7 +11,7 @@
         android:theme="@style/Theme.ContentProviderDIO">
         <provider
             android:name=".database.NotesProvider"
-            android:authorities="com.example.contentproviderdio"
+            android:authorities="com.example.contentproviderdio.provider"
             android:enabled="true"
             android:exported="true"></provider>
 
