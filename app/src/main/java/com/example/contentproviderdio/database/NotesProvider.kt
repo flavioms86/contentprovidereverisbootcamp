@@ -24,7 +24,6 @@ class NotesProvider : ContentProvider() {
         mUriMatcher.addURI(AUTHORITY, "notes/#", NOTES_BY_ID)
 
         if (context != null) { dbHelper = NotesDatabaseHelper(context as Context) }
-
         return true
     }
 
