@@ -9,7 +9,7 @@ class NotesDatabaseHelper(
     context: Context
 ):SQLiteOpenHelper(context, "databaseNotes", null, 1){
     override fun onCreate(db: SQLiteDatabase?) {
-        db?.execSQL("CREATE_TABLE $TABLE_NOTES (" +
+        db?.execSQL("CREATE TABLE $TABLE_NOTES (" +
             "$_ID INTEGER NOT NULL PRIMARY KEY," +
             "$TITLE_NOTES TEXT NOT NULL," +
             "$DESCRIPTION_NOTES TEXT NOT NULL)")
